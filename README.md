@@ -40,12 +40,26 @@ This project transforms RimWorld into a comprehensive military civilization insp
 -   **Combat Doctrine Implementation**: AI-driven tactical behaviors based on military training and rank structure.
 -   **Autonomous Military Operations**: Patrols, guard duties, and tactical responses executed without constant player micromanagement.
 
-### Instinctive "Talents" Perk System (Automatic Acquisition)
--   **Specific Proficiencies**: Pawns automatically gain specialized "talents" (perks) that represent ingrained training and conditioned responses, such as "Rifle Expertise," "Advanced Grenadier," or "Combat Reflexes."
--   **Tree-Based Progression**: Talents are organized in a progression tree, requiring previous talents, specific skill levels (Strength, Fitness, Discipline, Shooting, etc.), and **achievements** (e.g., specific kill counts, raids survived).
--   **Job-Specific Requirements**: Advanced talents will require completion of **specific military training jobs** (e.g., a "Rifle Drill" job, "Tactical Maneuver" job) or accumulated time spent in certain military `WorkTypes`.
--   **Backstory Restrictions**: Elite or unique talents can be gated behind **specific pawn backstories** (e.g., "Spec Ops Veteran," "Ex-Mercenary"), ensuring certain pawns have an inherent aptitude for advanced roles.
--   **No Perk Points**: Talents are automatically acquired the moment all prerequisites are met, simulating true instinctual learning.
+Instinctive "Talents" Perk System (Automatic Acquisition & Dynamic Buffs)
+Specific Proficiencies: Pawns automatically gain specialized "talents" (perks) that represent ingrained training and conditioned responses, such as "Rifle Expertise," "Advanced Grenadier," or "Combat Reflexes."
+Tree-Based Progression: Talents are organized in a progression tree, requiring previous talents, specific skill levels (Strength, Fitness, Discipline, Shooting, etc.), and achievements (e.g., specific kill counts, raids survived).
+Job-Specific Requirements: Advanced talents will require completion of specific military training jobs (e.g., a "Rifle Drill" job, "Tactical Maneuver" job) or accumulated time spent in certain military WorkTypes.
+Backstory Restrictions: Elite or unique talents can be gated behind specific pawn backstories (e.g., "Spec Ops Veteran," "Ex-Mercenary"), ensuring certain pawns have an inherent aptitude for advanced roles.
+No Perk Points: Talents are automatically acquired the moment all prerequisites are met, simulating true instinctual learning.
+Veteran's Resolve: Highly experienced soldiers (those with significant combat exposure, specific achievements, or certain "Talents" unlocked) can gain temporary or permanent performance buffs when facing overwhelming odds or high-stress combat situations, tied to their Discipline skill.
+Within "Advanced Military Hierarchy with Intelligent AI":
+
+I'd add a specific bullet point for "Battlefield Promotions & Demotions" to emphasize this dynamic aspect.
+
+Revised "Advanced Military Hierarchy with Intelligent AI" Section (incorporating "Battlefield Promotions"):
+
+Advanced Military Hierarchy with Intelligent AI
+Rank-Based Progression: From Recruit through specialized career tracks (Infantry, Medical, Technical, Leadership).
+Strategic Command AI: Officers who make autonomous decisions about base defense, patrol routes, and resource allocation.
+Tactical Squad Leaders: NCOs who coordinate fireteams with real tactical awareness and adaptive combat strategies.
+Chain of Command Dynamics: Higher-ranked pawns influence lower ranks through enhanced job priorities and AI-driven military protocols.
+Battlefield Promotions & Demotions: Pawns can earn immediate rank increases for exceptional performance in combat (e.g., saving critical units, holding key positions), and conversely, face demotions for severe insubordination or cowardice.
+Specialty AI Behaviors: Role-specific intelligence for medics, engineers, and specialists who prioritize their military functions.
 
 ## Implementation Strategy & Technical Approach
 
