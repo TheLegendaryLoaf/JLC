@@ -1,7 +1,7 @@
 # Cadia Military Framework - RimWorld Total Conversion
 
 ## Overview
-This project transforms RimWorld into a comprehensive military civilization inspired by Cadia and the Helldivers universe. The framework aims to create a realistic multi-colony empire featuring psychological conditioning, physical training, structured hierarchies, authentic military logistics, and **intelligent AI-driven military behavior**. The system emphasizes realism, immersion, and player-driven control of recruitment, training, combat operations, and supply chain management with autonomous military decision-making.
+This project transforms RimWorld into a comprehensive military civilization inspired by Cadia. The framework aims to create a realistic multi-colony empire featuring psychological conditioning, physical training, structured hierarchies, authentic military logistics, and **intelligent AI-driven military behavior**. The system emphasizes realism, immersion, and player-driven control of recruitment, training, combat operations, and supply chain management with autonomous military decision-making.
 
 ## Core Objectives
 
