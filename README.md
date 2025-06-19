@@ -1,3 +1,16 @@
+Okay, I understand! You want to integrate the new physical conditioning and rucking details into your provided README.md file, replacing or updating any conflicting or less detailed sections.
+
+As I mentioned before, I cannot directly edit files on your system. However, I can give you the complete, updated text for your README.md file, incorporating all the new information about:
+
+Dynamic Body Physiology (from "Workout" and "Rimbodies" integration, including MuscleMass capping and metabolic cost).
+Refined Physical Skills (Strength, Fitness, Discipline as "technique").
+Realistic Rucking System.
+I will replace the existing "Physical Enhancement Framework" section and add details about the mod integrations.
+
+Here is the revised README.md content for you to copy and paste:
+
+Markdown
+
 # Cadia Military Framework - RimWorld Total Conversion
 
 ## Overview
@@ -22,10 +35,27 @@ This project transforms RimWorld into a comprehensive military civilization insp
 -   **Field Rat Development**: Soldiers gain preferences for MREs, military cots, outdoor conditions, and high-stress environments.
 -   **Mental Resilience**: Graduated soldiers become immune to mood penalties that affect civilians, with bonuses for military structure and unit cohesion.
 
-### Physical Enhancement Framework (Strength, Fitness, Discipline Skills)
--   **Strength Skill**: Influences melee combat effectiveness, construction capabilities, and equipment handling (e.g., carry capacity, mining speed).
--   **Fitness Skill**: Affects movement speed, endurance during extended operations, and recovery (e.g., global work speed, rest need rate).
--   **Discipline Skill**: Controls mental break resistance, order-following behavior, and stress management under fire.
+### Physical Enhancement & Conditioning Framework
+This framework integrates physical attributes with deep skill-based mechanics, ensuring every soldier's body and training are critical to their effectiveness.
+
+* **Dynamic Body Physiology (Integrated with 'Workout' & 'Rimbodies' Mods)**: Leverages existing robust mods to create realistic pawn physiologies based on **`MuscleMass`** and **`Fat`**.
+    * **Metabolic Cost:** Pawns with higher `MuscleMass` will consume more food, creating a strategic trade-off between raw strength and resource efficiency.
+    * **Direct Stat Impact:** `MuscleMass` and `Fat` directly influence core physical stats like `CarryWeight`, `MoveSpeed`, `UnarmedDamage`, and various work speeds (e.g., Construction, Mining). Excess fat will explicitly reduce `MoveSpeed`.
+
+* **Refined Physical Skills (Strength, Fitness, Discipline)**: Your custom `Strength` and `Fitness` skills represent more than just raw physical capacity; they embody **technique, efficiency, and learned wisdom**, allowing experienced soldiers to leverage their bodies with greater effectiveness regardless of raw mass.
+    * **Strength (`STR`):** Governs a pawn's raw power and how effectively they apply force. Influences melee combat effectiveness, construction capabilities, and equipment handling.
+        * **`MuscleMass` Cap:** A pawn's `Strength` skill level now determines the **maximum `MuscleMass`** they can gain and maintain. Low `Strength` (e.g., <5) will cap `MuscleMass` at 'Thin' levels, `Strength` 5-14 allows for 'Lean' (Optimal) physique, while `Strength` 15+ is required to achieve 'Hulk' levels of `MuscleMass`. This ensures pawns cannot achieve muscular physiques unsupported by their functional strength.
+        * **"Inefficient Strength" Debuff:** If a pawn possesses high `Strength` but insufficient `MuscleMass` to support it (e.g., a Strength 15 pawn with a 'Thin' body), they will experience penalties to work speed, movement, and accrue fatigue faster. Critically, their `Strength` skill will **regress at an accelerated rate** until their `MuscleMass` catches up or their `Strength` skill aligns with their current physique.
+        * **Technique Multiplier:** `Strength` skill provides an *additional multiplier* to physical stats (like `CarryWeight`, `UnarmedDamage`, work speeds) *beyond* what `MuscleMass` provides, simulating a skilled application of force.
+    * **Fitness (`FIT`):** Affects movement speed, endurance during extended operations, and recovery. Governs a pawn's endurance, agility, and overall physical resilience.
+        * **Fatigue Management:** Directly influences the rate at which pawns gain and recover from various fatigue `Hediffs` (including your custom `Hediff_MuscleFatigue` and `Hediff_RuckExhaustion`). Higher `Fitness` means less fatigue accumulation and faster recovery.
+        * **Agility & Stamina:** Provides bonuses to `MoveSpeed` (independent of fat's direct influence) and `MeleeDodgeChance`, reflecting overall athleticism and the ability to sustain effort.
+    * **Discipline Skill (`DIS`):** Controls mental break resistance, order-following behavior, and stress management under fire.
+
+* **Realistic Rucking System:** Marching with loads now incurs significant fatigue for all pawns, emphasizing endurance over brute strength for long treks.
+    * **`JobDef_RuckMarch`:** Pawns can be assigned to designated "Ruck Marches" (via Drill Sergeants or officer commands). They'll equip rucksacks with specific loads and traverse routes.
+    * **`Hediff_RuckExhaustion`:** While rucking, pawns accumulate this new `Hediff`. Its severity progressively reduces `MoveSpeed`, increases `Rest` need, accelerates other fatigue, and can lead to collapse or mental breaks if pushed too far.
+    * **Skill Integration:** `Fitness` is paramount for endurance and recovery during rucking. `Strength` influences the comfortable carrying capacity and contributes to initial pace. `Discipline` helps pawns resist the mental and physical tolls of extreme exhaustion.
 
 ### Advanced Military Hierarchy with Intelligent AI
 -   **Rank-Based Progression**: From Recruit through specialized career tracks (Infantry, Medical, Technical, Leadership), **using "Deadman Switch Ranks" as a foundational framework for custom ranks and their benefits.**
@@ -96,12 +126,15 @@ This project focuses on leveraging and extending existing, robust RimWorld mod f
 -   **Combat Extended** - Realistic combat mechanics and equipment systems.
 -   **Vehicle Framework** - Inter-colony transport and logistics.
 -   **Vanilla Traits Expanded** - Base trait system for military personality development.
+-   **Toughness** - Framework for implementing custom Strength, Fitness, and Discipline skills.
 -   **[FSF] Simple Education** - For structured skill learning and basic education (for some skills).
 -   **Children, school and learning** - If the project includes childhood development impacting military suitability.
 -   **Schedule Everything!** - For player-driven scheduling of military duties and training activities.
 -   **[1.5-1.4] CAI 5000 - Advanced AI + Fog Of War** - To provide highly challenging and tactical enemy AI, acting as a benchmark and opponent for your advanced military.
 -   **Dynamic Traits** - For rebalancing trait effects and allowing dynamic trait removal/gain based on conditions.
 -   **Interaction Bubbles** - To leverage its social interaction framework for AI triggers and deeper psychological effects.
+-   **'Workout' Mod** - Used for core physical training mechanics, muscle gain, and fatigue accumulation.
+-   **'Rimbodies' Mod** - Used for dynamic body types, calorie consumption, and stat effects linked to MuscleMass/Fat.
 
 ### AI Integration Strategy
 -   **Custom Behavior Trees (C#)**: Implement military doctrine-based decision trees directly in C# using RimWorld's ThinkTree and JobGiver systems.
@@ -150,7 +183,7 @@ This project focuses on leveraging and extending existing, robust RimWorld mod f
 
 ## Notes for Implementation
 -   **Focus on XML-based trait definitions** and event systems where possible, with C# for complex AI behaviors.
--   **Utilize existing mod frameworks** (JecsTools, Community Framework, Dynamic Traits, Deadman Switch Ranks, Interaction Bubbles) for general utilities and pawn modification.
+-   **Utilize existing mod frameworks** (JecsTools, Community Framework) for general utilities and pawn modification.
 -   **Maintain compatibility** with Combat Extended and Vehicle Framework ecosystems.
 -   **Design for gradual rollout** - each phase should be playable independently.
 -   **Prioritize psychological conditioning and AI systems** as the foundation for all other features.
