@@ -1,16 +1,3 @@
-Okay, I understand! You want to integrate the new physical conditioning and rucking details into your provided README.md file, replacing or updating any conflicting or less detailed sections.
-
-As I mentioned before, I cannot directly edit files on your system. However, I can give you the complete, updated text for your README.md file, incorporating all the new information about:
-
-Dynamic Body Physiology (from "Workout" and "Rimbodies" integration, including MuscleMass capping and metabolic cost).
-Refined Physical Skills (Strength, Fitness, Discipline as "technique").
-Realistic Rucking System.
-I will replace the existing "Physical Enhancement Framework" section and add details about the mod integrations.
-
-Here is the revised README.md content for you to copy and paste:
-
-Markdown
-
 # Cadia Military Framework - RimWorld Total Conversion
 
 ## Overview
